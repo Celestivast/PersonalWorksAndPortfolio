@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestivast | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ::selection {
+            background-color: #2563eb;
+            color: #fff;
+        }
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            background: radial-gradient(circle at top, #141c2c 0%, #0b101a 65%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 640px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+        .project-card {
+            background-color: #141c2c;
+            border: 1px solid #233047;
+            border-radius: 14px;
+            padding: 1.8rem;
+            margin-bottom: 1.3rem;
+            transition: all 0.28s ease;
+            cursor: pointer;
+        }
+        .project-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+        }
+        .project-card a {
+            text-decoration: none;
+            display: block;
+        }
+        .project-title {
+            font-size: 1.4rem;
+            color: #60a5fa;
+            margin-bottom: 0.45rem;
+            font-weight: 600;
+        }
+        .project-desc {
+            color: #94a3b8;
+            line-height: 1.65;
+            font-size: 0.98rem;
+        }
+        .domain-tag {
+            font-family: ui-monospace, Menlo, Monaco, monospace;
+            color:#4ade80;
+            margin-top:0.7rem;
+            font-size:0.95rem;
+        }
+        footer {
+            margin-top:4.5rem;
+            color:#64748b;
+            font-size:0.9rem;
+        }
+        /* 移动端适配 */
+        @media(max-width: 600px){
+            h1 {
+                font-size: 2.2rem;
+            }
+            .project-card {
+                padding: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Celestivast</h1>
+        <p class="subtitle">Personal Works & Portfolio</p>
+
+        <div class="project-card">
+            <a href="https://mose.celestivast.com">
+                <div class="project-title">水二杂记</div>
+                <div class="project-desc">水二中过往趣事记录与交流讨论</div>
+                <div class="domain-tag">mose.celestivast.com</div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://isaspectrum.celestivast.com">
+                <div class="project-title">ISA Spectrum</div>
+                <div class="project-desc">ISA学生校园学生交流墙 · v3.4.2 Beta</div>
+                <div class="domain-tag">isaspectrum.celestivast.com</div>
+            </a>
+        </div>
+
+        <footer>
+            © 2026 Celestivast
+        </footer>
+    </div>
+</body>
+</html>
