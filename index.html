@@ -6,8 +6,34 @@ Licensed under the MIT License.
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestivast | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- 基础SEO核心 -->
+    <title>Celestivast | 个人技术作品集</title>
+    <meta name="author" content="沧海四象">
+    <meta name="keywords" content="Celestivast,个人作品集,ISA Spectrum,水二杂记,Web前端开发,开源项目">
+    <meta name="description" content="Celestivast沧海四象个人技术作品集网站，展示ISA Spectrum校园交流工具、水二杂记记录平台等原创开源Web项目与技术实践成果。">
+    <meta name="robots" content="index,follow">
+
+    <!-- 搜索引擎验证 -->
+    <meta name="baidu-site-verification" content="codeva-rhccpYBm8V" />
+    <!-- Bing验证后续拿到code直接替换content即可 -->
+    <!-- <meta name="msvalidate.01" content="你的Bing验证码"> -->
+
+    <!-- Open Graph 社交分享预览 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Celestivast | 个人技术作品集">
+    <meta property="og:description" content="沧海四象个人作品集，收录ISA Spectrum、水二杂记等原创网页项目。">
+    <meta property="og:url" content="https://celestivast.com">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- 图标与PWA清单（原样保留） -->
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Celestivast Personal Works" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
     <style>
         * {
             margin: 0;
@@ -16,10 +42,10 @@ Licensed under the MIT License.
         }
         ::selection {
             background-color: #2563eb;
-            color: #fff;
+            color: #ffffff;
         }
         body {
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             background: radial-gradient(circle at top, #141c2c 0%, #0b101a 65%);
             color: #e2e8f0;
             min-height: 100vh;
@@ -27,9 +53,10 @@ Licensed under the MIT License.
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: 2rem 1rem;
+            line-height: 1.5;
         }
-        .container {
+        main.container {
             max-width: 640px;
             width: 100%;
         }
@@ -62,6 +89,8 @@ Licensed under the MIT License.
         .project-card a {
             text-decoration: none;
             display: block;
+            width: 100%;
+            height: 100%;
         }
         .project-title {
             font-size: 1.4rem;
@@ -75,59 +104,98 @@ Licensed under the MIT License.
             font-size: 0.98rem;
         }
         .domain-tag {
-            font-family: ui-monospace, Menlo, Monaco, monospace;
-            color:#4ade80;
-            margin-top:0.7rem;
-            font-size:0.95rem;
+            font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+            color: #4ade80;
+            margin-top: 0.7rem;
+            font-size: 0.95rem;
         }
         footer {
-            margin-top:4.5rem;
-            color:#64748b;
-            font-size:0.9rem;
+            margin-top: 4.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            text-align: center;
         }
-        /* 移动端适配 */
-        @media(max-width: 600px){
+        /* 移动端响应式优化 */
+        @media (max-width: 600px) {
             h1 {
                 font-size: 2.2rem;
             }
             .project-card {
                 padding: 1.4rem;
             }
+            body {
+                padding: 1.5rem 0.8rem;
+            }
         }
     </style>
-    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Celestivast Personal Works" />
-    <link rel="manifest" href="/images/site.webmanifest" />
-    <meta name="baidu-site-verification" content="codeva-rhccpYBm8V" />
-    <meta name="description" content="沧海四象个人作品网，用于展示个人作品" />
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>Celestivast</h1>
         <p class="subtitle">Personal Works & Portfolio</p>
 
-        <div class="project-card">
-            <a href="https://mose.celestivast.com">
-                <div class="project-title">水二杂记</div>
-                <div class="project-desc">水二中过往趣事记录与交流讨论</div>
-                <div class="domain-tag">mose.celestivast.com</div>
-            </a>
-        </div>
+        <section class="project-list">
+            <div class="project-card">
+                <a href="https://mose.celestivast.com" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">水二杂记</div>
+                    <div class="project-desc">水二中过往趣事记录与交流讨论平台</div>
+                    <div class="domain-tag">mose.celestivast.com</div>
+                </a>
+            </div>
 
-        <div class="project-card">
-            <a href="https://isaspectrum.celestivast.com">
-                <div class="project-title">ISA Spectrum</div>
-                <div class="project-desc">ISA学生校园学生交流墙 · v3.4.2 Beta</div>
-                <div class="domain-tag">isaspectrum.celestivast.com</div>
-            </a>
-        </div>
+            <div class="project-card">
+                <a href="https://isaspectrum.celestivast.com" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">ISA Spectrum</div>
+                    <div class="project-desc">ISA学生校园交流墙 · v3.4.2 Beta 版本</div>
+                    <div class="domain-tag">isaspectrum.celestivast.com</div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://space.bilibili.com/3546978038319543" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">B站 · 沧海四象</div>
+                    <div class="project-desc">我的B站账号</div>
+                    <div class="domain-tag">space.bilibili.com</div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAgk3AVSBjQ93ZcWzAKQD39Yz6_JDfthIG4UgbKNvTYIWCmWicDRqZHXXgpJJ2OsNa" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">抖音 · 沧海四象</div>
+                    <div class="project-desc">我的抖音</div>
+                    <div class="domain-tag">douyin.com/user</div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://author.baidu.com/home/1836709966197702" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">百度百家号 · 沧海四象</div>
+                    <div class="project-desc">我的百度百家号</div>
+                    <div class="domain-tag">author.baidu.com</div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://www.xiaohongshu.com/user/profile/69be040300000000330396de" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">小红书 · 沧海四象</div>
+                    <div class="project-desc">我的小红书</div>
+                    <div class="domain-tag">xiaohongshu.com/user</div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                    <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NTYwOTE5Nw==#wechat_redirect" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">微信公众号 · 沧海四象</div>
+                    <div class="project-desc">我的公众号（微信内才能点开）</div>
+                    <div class="domain-tag">mp.weixin.qq.com</div>
+                </a>
+            </div>
+        </section>
 
         <footer>
-            联系邮箱：contact@celestivast.com<br>© 2026 沧海四象
+            联系邮箱：contact@celestivast.com<br>
+            © 2026 沧海四象 保留所有权利 | MIT Licensed
         </footer>
-    </div>
+    </main>
 </body>
 </html>
