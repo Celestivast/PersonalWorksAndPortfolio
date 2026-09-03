@@ -1,0 +1,148 @@
+<!--
+Copyright (c) 2026 沧海四象
+Licensed under the MIT License.
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>安全致谢名人堂 | Celestivast</title>
+    <meta name="author" content="沧海四象">
+    <meta name="description" content="Celestivast 安全漏洞致谢名人堂，感谢负责任披露漏洞的安全研究者。">
+    <meta name="robots" content="index,follow">
+
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Celestivast Security Hall-of-Fame" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ::selection {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at top, #141c2c 0%, #0b101a 65%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            line-height: 1.5;
+        }
+        main.container {
+            max-width: 640px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+        .hall-card {
+            background-color: #141c2c;
+            border: 1px solid #233047;
+            border-radius: 14px;
+            padding: 1.8rem;
+            margin-bottom: 1.3rem;
+            transition: all 0.28s ease;
+        }
+        .hall-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+        }
+        .hall-title {
+            font-size: 1.4rem;
+            color: #60a5fa;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        ul.hall-list {
+            list-style-position: inside;
+            color: #94a3b8;
+        }
+        ul.hall-list li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #233047;
+            font-size: 0.98rem;
+        }
+        ul.hall-list li:last-child {
+            border-bottom: none;
+        }
+        .empty-tip {
+            color: #64748b;
+            font-style: italic;
+        }
+        .domain-tag {
+            font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+            color: #4ade80;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+        .domain-tag a {
+            color: #4ade80;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 4.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        /* 移动端响应式 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .hall-card {
+                padding: 1.4rem;
+            }
+            body {
+                padding: 1.5rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>安全致谢名人堂</h1>
+        <p class="subtitle">Hall-of-Fame | 感谢负责任漏洞披露</p>
+
+        <div class="hall-card">
+            <div class="hall-title">安全贡献者</div>
+            <ul class="hall-list">
+                <!-- 新增条目示例：
+                <li>研究者名称 — 漏洞简述 — 2026‑09‑03</li>
+                -->
+                <li class="empty-tip">暂未收到安全漏洞报告</li>
+            </ul>
+            <div class="domain-tag">
+                <a href="/.well-known/security.txt">查看 security.txt 漏洞报告指引</a>
+            </div>
+        </div>
+
+        <footer>
+            联系邮箱：contact@celestivast.com<br>
+            © 2026 沧海四象 保留所有权利 | MIT Licensed
+        </footer>
+    </main>
+</body>
+</html>
